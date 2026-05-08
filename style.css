@@ -563,7 +563,7 @@ section {
 
 .sertification-bg-ellipse {
     background-image: url("images/Ellipse.png");
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -585,9 +585,30 @@ section {
 .sertification_img {
     position: absolute;
     width: 429px;
-    top: -48px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.sertification_btn-container {
+    background: #FFFFFF1A;
+    max-width: 225px;
+    display: flex;
+    gap: 0.438rem;
+    align-items: center;
+}
+
+.sertification_btn-img {
+    width: 24px;
+}
+
+.sertification_btn-text {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 146%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
 }
 
 .sertification_container-text {
@@ -596,6 +617,44 @@ section {
     width: 100%;
     padding: 10rem 2.5rem 16.063rem 2.5rem;
     position: relative;
+}
+
+.sertification_btn-container-corner {
+    --c: #3BAA34;
+    /* цвет углов */
+    --t: 2px;
+    /* толщина линии */
+    --l: 12px;
+    /* длина плеча */
+
+    margin: 0;
+    padding: 0.75rem 1.25rem;
+    border-radius: 2px;
+    position: absolute;
+    width: 225px;
+    bottom: 75px;
+    right: 23%;
+    transform: translateX(-50%);
+    z-index: 5;
+    backdrop-filter: blur(4px);
+
+    /* 8 фоновых "полосок" = 4 угла */
+    background:
+        /* top-left */
+        linear-gradient(var(--c), var(--c)) top left / var(--l) var(--t) no-repeat,
+        linear-gradient(var(--c), var(--c)) top left / var(--t) var(--l) no-repeat,
+
+        /* top-right */
+        linear-gradient(var(--c), var(--c)) top right / var(--l) var(--t) no-repeat,
+        linear-gradient(var(--c), var(--c)) top right / var(--t) var(--l) no-repeat,
+
+        /* bottom-left */
+        linear-gradient(var(--c), var(--c)) bottom left / var(--l) var(--t) no-repeat,
+        linear-gradient(var(--c), var(--c)) bottom left / var(--t) var(--l) no-repeat,
+
+        /* bottom-right */
+        linear-gradient(var(--c), var(--c)) bottom right / var(--l) var(--t) no-repeat,
+        linear-gradient(var(--c), var(--c)) bottom right / var(--t) var(--l) no-repeat;
 }
 
 .sertification_text {
