@@ -667,6 +667,21 @@ section {
     max-width: 410px;
 }
 
+.gallery {
+    padding: 5rem 0 0 5rem;
+}
+
+.gallery_container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.gallery_img {
+    width: 420px;
+}
+
 
 
 
