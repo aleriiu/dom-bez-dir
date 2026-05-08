@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дом без дыр</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script defer src="./script.js"></script>
+
 </head>
 
 <body>
@@ -394,7 +393,7 @@
             </div>
         </section>
         <section class="gallery">
-            <div class="gallery_container">
+            <div class="gallery_container" data-lenis-prevent>
                 <img class="gallery_img" src="./images/gallery1.png" alt="галерея">
                 <img class="gallery_img" src="./images/gallery2.png" alt="галерея">
                 <img class="gallery_img" src="./images/gallery3.png" alt="галерея">
@@ -658,6 +657,14 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+    <script defer src="./script.js"></script>
+    <script defer src="./animation.js"></script>
+
 </body>
 
 </html>

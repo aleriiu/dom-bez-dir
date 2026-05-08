@@ -669,17 +669,34 @@ section {
 
 .gallery {
     padding: 5rem 0 0 5rem;
+    overflow: hidden;
 }
 
 .gallery_container {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
-    overflow: hidden;
+    gap: 1.25rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
+
+.gallery_container::-webkit-scrollbar {
+    display: none; 
+    width: 0;
+    height: 0;
+  }
 
 .gallery_img {
     width: 420px;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    flex: 0 0 auto;
 }
 
 
