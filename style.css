@@ -689,12 +689,18 @@ section {
 .delivery_img-container {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 2.188rem;
 }
 
 .delivery_img-container img {
     filter: grayscale(1);
     transition: filter 0.2s ease;
+}
+
+.contacts_img-container-social {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
 }
 
 .corners-green-width {
@@ -1167,23 +1173,41 @@ iframe {
 
 .ticker {
     overflow: hidden;
-    margin: 0 auto;
     width: 100%;
 }
 
 .clients_slider-track {
-    -webkit-animation: scroll 20s linear infinite;
-    animation: scroll 20s linear infinite;
     display: flex;
-    align-items: center;
-    width: calc(232px * 6);
+    width: max-content;
+    animation: marquee 14s linear infinite;
+    gap: 5rem;
 }
 
 .clients__slide {
-    width: 232px;
+    flex: 0 0 auto;
+    width: 173px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.clients__slide img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-33.3333%);
+    }
+
+    /* 1 из 3 наборов */
 }
 
 .footer-wrapper {
@@ -1249,6 +1273,10 @@ hr {
     display: flex;
     align-items: flex-end;
     gap: 1.25rem;
+}
+
+.contacts-social-title {
+    font-size: 1.25rem;
 }
 
 
