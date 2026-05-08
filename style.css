@@ -553,6 +553,62 @@ section {
 }
 
 
+.sertification {
+    padding: 0 5rem;
+}
+
+.sertification-bg {
+    background-color: #EEEEEE;
+}
+
+.sertification-bg-ellipse {
+    background-image: url("images/Ellipse.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sertification_title {
+    font-weight: 700;
+    font-size: 5.75rem;
+    line-height: 82%;
+    letter-spacing: -2%;
+    text-align: center;
+    color: #B3CDB1;
+}
+
+.sertification_container {
+    padding: 3.375rem 0 0 0;
+    position: relative;
+}
+
+.sertification_img {
+    position: absolute;
+    width: 429px;
+    top: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sertification_container-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10rem 2.5rem 16.063rem 2.5rem;
+    position: relative;
+}
+
+.sertification_text {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 146%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #232323;
+    max-width: 410px;
+}
+
+
 
 
 .information {
