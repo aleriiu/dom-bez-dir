@@ -4,107 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DBD</title>
+    <title>Дом без дыр</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script defer src="./script.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <img class="logo" src="./images/logo_clear.png" alt="logo">
-        <ul class="header_nav">
-            <li class="header_nav_text"><a class="header_nav_link" href="">Продукция</a></li>
-            <li class="header_nav_text"><a class="header_nav_link" href="">Преимущества</a></li>
-            <li class="header_nav_text"><a class="header_nav_link" href="">Как подобрать деталь</a></li>
-            <li class="header_nav_text"><a class="header_nav_link" href="">Доставка</a></li>
-            <li class="header_nav_text"><a class="header_nav_link" href="">Отзывы</a></li>
-            <li class="header_nav_text"><a class="header_nav_link" href="">Партнеры</a></li>
-        </ul>
-        <img id="menu" class="nav-img" src="images/burger-menu.png" alt="навигационное меню">
-        <div class="modal_menu">
-            <div class="modal_menu-bg">
-                <img id="close" class="modal-btn-back" src="./images/close.png" alt="кнопка назад в модальном меню"
-                    width="35">
-                <ul class="modal_menu-container">
-                    <li class="header_nav_text"><a class="header_nav_link" href="">Продукция</a></li>
-                    <li class="header_nav_text"><a class="header_nav_link" href="">Преимущества</a></li>
-                    <li class="header_nav_text"><a class="header_nav_link" href="">Как подобрать деталь</a></li>
-                    <li class="header_nav_text"><a class="header_nav_link" href="">Доставка</a></li>
-                    <li class="header_nav_text"><a class="header_nav_link" href="">Отзывы</a></li>
-                    <li class="header_nav_text"><a class="header_nav_link" href="">Партнеры</a></li>
-                </ul>
-            </div>
-        </div>
-        <button id="link-popup" class="btn_green">Связаться</button>
-        <div class="modal_menu-pop-up-phone">
-            <div class="modal_menu-bg-pop-up-phone">
-                <img id="close-pop-up-phone" class="modal-btn-back-pop-up" src="./images/close.png"
-                    alt="кнопка назад в модальном меню" width="35">
-                <div class="modal_menu-container-pop-up-phone">
-                    <div class="text-popup-container">
-                        <p class="title-popup">Вы можете связаться с нами по указанным телефонам</p>
-                    </div>
-                    <div class="contact-us_phones">
-                        <p class="contacts_text-popup">+7 (939) 843-77-87</p>
-                        <p class="contacts_text-popup">+7 (495) 197-83-09</p>
-                    </div>
+    <div class="background-top">
+        <header class="header">
+            <img class="logo" src="./images/logo_clear.png" alt="logo">
+            <ul class="header_nav">
+                <li class="header_nav_text"><a class="header_nav_link" href="">Продукция</a></li>
+                <li class="header_nav_text"><a class="header_nav_link" href="">Преимущества</a></li>
+                <li class="header_nav_text"><a class="header_nav_link" href="">Как подобрать деталь</a></li>
+                <li class="header_nav_text"><a class="header_nav_link" href="">Доставка</a></li>
+                <li class="header_nav_text"><a class="header_nav_link" href="">Отзывы</a></li>
+                <li class="header_nav_text"><a class="header_nav_link" href="">Партнеры</a></li>
+            </ul>
+            <img id="menu" class="nav-img" src="images/burger-menu.png" alt="навигационное меню">
+            <div class="modal_menu">
+                <div class="modal_menu-bg">
+                    <img id="close" class="modal-btn-back" src="./images/close.png" alt="кнопка назад в модальном меню"
+                        width="35">
+                    <ul class="modal_menu-container">
+                        <li class="header_nav_text"><a class="header_nav_link" href="">Продукция</a></li>
+                        <li class="header_nav_text"><a class="header_nav_link" href="">Преимущества</a></li>
+                        <li class="header_nav_text"><a class="header_nav_link" href="">Как подобрать деталь</a></li>
+                        <li class="header_nav_text"><a class="header_nav_link" href="">Доставка</a></li>
+                        <li class="header_nav_text"><a class="header_nav_link" href="">Отзывы</a></li>
+                        <li class="header_nav_text"><a class="header_nav_link" href="">Партнеры</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </header>
-    <div class="hero">
-        <div class="hero_container">
-            <p class="hero_over-title">На качестве не экономим</p>
-            <h1 class="hero_title">Крепежный узел</h1>
-            <p class="hero_under-title">Мы специализируемся на производстве высококачественных крепежных узлов для
-                деревянного домостроения.
-                Наша миссия — обеспечить надежность и долговечность вашего дома.</p>
-            <div id="link-popup-hero" class="btn">
-                <p class="btn-text">Заказать</p>
-                <img class="arrow-img" src="./images/arrow-right.png" alt="стрелка вправо">
-            </div>
-            <div class="modal_menu-pop-up">
-                <div class="modal_menu-bg-pop-up">
-                    <img id="close-pop-up" class="modal-btn-back-pop-up" src="./images/close.png"
+            <button id="link-popup" class="btn_green">Связаться</button>
+            <div class="modal_menu-pop-up-phone">
+                <div class="modal_menu-bg-pop-up-phone">
+                    <img id="close-pop-up-phone" class="modal-btn-back-pop-up" src="./images/close.png"
                         alt="кнопка назад в модальном меню" width="35">
-                    <div class="modal_menu-container-pop-up">
+                    <div class="modal_menu-container-pop-up-phone">
                         <div class="text-popup-container">
-                            <p class="title-popup">Сделайте заказ
-                                удобным для вас способом</p>
-                            <p class="text-popup">Вы можете связаться с нами по указанным телефонам
-                                и через соцсети или сделать заказ маркетплейсах</p>
+                            <p class="title-popup">Вы можете связаться с нами по указанным телефонам</p>
                         </div>
-                        <div class="contacts-popup-group">
-                            <div class="contact-us_phones">
-                                <p class="contacts_text-popup">+7 (939) 843-77-87</p>
-                                <p class="contacts_text-popup">+7 (495) 197-83-09</p>
-                            </div>
-                            <div class="contact-us_social">
-                                <img src="./images/vk.png" alt="vk" width="40">
-                                <img src="./images/vk.png" alt="vk" width="40">
-                            </div>
-                        </div>
-                        <div class="popup-delivery-container">
-                            <img class="popup_img-ozon" src="./images/Ozon_logo_clear.png" alt="ozon">
-                            <img class="popup_img-yandex" src="./images/yandex_logo.png" alt="yandex">
-                        </div>
-                        <div class="popup-pic-wrapper">
-                            <img class="pop-up-pic" src="./images/pics-popup.png" alt="pop-up">
+                        <div class="contact-us_phones">
+                            <p class="contacts_text-popup">+7 (939) 843-77-87</p>
+                            <p class="contacts_text-popup">+7 (495) 197-83-09</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="hero_container-pics">
-            <div class="hero-pic-wrapper"><img class="hero-pic" src="./images/hero.png" alt="///"></div>
-            <div class="hero-pic-wrapper"><img class="hero-pic" src="./images/hero.png" alt="///"></div>
+        </header>
+        <div class="hero">
+            <div class="hero_container">
+                <div class="hero_container-text-group">
+                    <h1 class="hero_title">Крепежный узел</h1>
+                    <p class="hero_over-title">На качестве не экономим</p>
+                </div>
+                <div class="hero_container-text-group hero_container-text-group-btn">
+                    <div>
+                        <p class="hero_under-title">Мы&nbsp;специализируемся на&nbsp;производстве высококачественных
+                            крепежных узлов для деревянного домостроения.</p>
+                        <p class="hero_under-title">
+                            Наша миссия&nbsp;&mdash; обеспечить надежность и&nbsp;долговечность вашего&nbsp;дома.</p>
+                    </div>
+                    <button class="btn_green">Заказать</button>
+                </div>
+                <div class="modal_menu-pop-up">
+                    <div class="modal_menu-bg-pop-up">
+                        <img id="close-pop-up" class="modal-btn-back-pop-up" src="./images/close.png"
+                            alt="кнопка назад в модальном меню" width="35">
+                        <div class="modal_menu-container-pop-up">
+                            <div class="text-popup-container">
+                                <p class="title-popup">Сделайте заказ
+                                    удобным для вас способом</p>
+                                <p class="text-popup">Вы можете связаться с нами по указанным телефонам
+                                    и через соцсети или сделать заказ маркетплейсах</p>
+                            </div>
+                            <div class="contacts-popup-group">
+                                <div class="contact-us_phones">
+                                    <p class="contacts_text-popup">+7 (939) 843-77-87</p>
+                                    <p class="contacts_text-popup">+7 (495) 197-83-09</p>
+                                </div>
+                                <div class="contact-us_social">
+                                    <img src="./images/vk.png" alt="vk" width="40">
+                                    <img src="./images/vk.png" alt="vk" width="40">
+                                </div>
+                            </div>
+                            <div class="popup-delivery-container">
+                                <img class="popup_img-ozon" src="./images/Ozon_logo_clear.png" alt="ozon">
+                                <img class="popup_img-yandex" src="./images/yandex_logo.png" alt="yandex">
+                            </div>
+                            <div class="popup-pic-wrapper">
+                                <img class="pop-up-pic" src="./images/pics-popup.png" alt="pop-up">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero_container-pics">
+                <img class="hero-pic" src="./images/hero.png" alt="///">
+            </div>
         </div>
     </div>
     <main>
@@ -112,341 +115,382 @@
             <section class="goods">
                 <div class="goods_container-group">
                     <div class="goods_text-container">
-                        <p class="goods_title-over">Продукция</p>
                         <div class="goods_title-container">
+                            <p class="goods_title-over">Продукция</p>
                             <h2 class="goods_title">Пружинные узлы</h2>
-                            <img class="goods_title-img" src="./images/arrow-down.png" alt="стрелка вниз">
                         </div>
                         <p class="text">Надежные соединения для деревянного дома</p>
                     </div>
                     <div class="cards_goods">
                         <div class="card_goods">
                             <img class="card_goods-img" src="./images/card1.png" alt="">
-                            <p class="card_goods-name">Пружинный узел 160мм</p>
-                            <p class="card_goods-price">1000 Р</p>
+                            <div class="card_goods-name-price">
+                                <div>
+                                    <p class="card_goods-name">Пружинный узел</p>
+                                    <p class="card_goods-name">160мм</p>
+                                </div>
+                                <p class="card_goods-price corners-green">1000 Р</p>
+                            </div>
                         </div>
                         <div class="card_goods">
                             <img class="card_goods-img" src="./images/card1.png" alt="">
-                            <p class="card_goods-name">Пружинный узел 160мм</p>
-                            <p class="card_goods-price">1000 Р</p>
+                            <div class="card_goods-name-price">
+                                <div>
+                                    <p class="card_goods-name">Пружинный узел</p>
+                                    <p class="card_goods-name">160мм</p>
+                                </div>
+                                <p class="card_goods-price corners-green">1000 Р</p>
+                            </div>
                         </div>
                         <div class="card_goods">
                             <img class="card_goods-img" src="./images/card1.png" alt="">
-                            <p class="card_goods-name">Пружинный узел 160мм</p>
-                            <p class="card_goods-price">1000 Р</p>
+                            <div class="card_goods-name-price">
+                                <div>
+                                    <p class="card_goods-name">Пружинный узел</p>
+                                    <p class="card_goods-name">160мм</p>
+                                </div>
+                                <p class="card_goods-price corners-green">1000 Р</p>
+                            </div>
                         </div>
                         <div class="card_goods">
                             <img class="card_goods-img" src="./images/card1.png" alt="">
-                            <p class="card_goods-name">Пружинный узел 160мм</p>
-                            <p class="card_goods-price">1000 Р</p>
+                            <div class="card_goods-name-price">
+                                <div>
+                                    <p class="card_goods-name">Пружинный узел</p>
+                                    <p class="card_goods-name">160мм</p>
+                                </div>
+                                <p class="card_goods-price corners-green">1000 Р</p>
+                            </div>
                         </div>
                         <div class="card_goods">
                             <img class="card_goods-img" src="./images/card1.png" alt="">
-                            <p class="card_goods-name">Пружинный узел 160мм</p>
-                            <p class="card_goods-price">1000 Р</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="goods_container-group">
-                    <div class="goods_title-container">
-                        <h2 class="goods_title">Сверла</h2>
-                        <img class="goods_title-img" src="./images/arrow-down.png" alt="стрелка вниз">
-                    </div>
-                    <div class="cards_goods">
-                        <div class="card_goods">
-                            <img class="card_goods-img" src="./images/card1.png" alt="">
-                            <p class="card_goods-name">Пружинный узел 160мм</p>
-                            <p class="card_goods-price">1000 Р</p>
-                        </div>
-                        <div class="card_goods">
-                            <img class="card_goods-img" src="./images/card1.png" alt="">
-                            <p class="card_goods-name">Пружинный узел 160мм</p>
-                            <p class="card_goods-price">1000 Р</p>
-                        </div>
-                        <div class="card_goods">
-                            <img class="card_goods-img" src="./images/card1.png" alt="">
-                            <p class="card_goods-name">Пружинный узел 160мм</p>
-                            <p class="card_goods-price">1000 Р</p>
-                        </div>
-                        <div class="card_goods">
-                            <img class="card_goods-img" src="./images/card1.png" alt="">
-                            <p class="card_goods-name">Пружинный узел 160мм</p>
-                            <p class="card_goods-price">1000 Р</p>
-                        </div>
-                        <div class="card_goods">
-                            <img class="card_goods-img" src="./images/card1.png" alt="">
-                            <p class="card_goods-name">Пружинный узел 160мм</p>
-                            <p class="card_goods-price">1000 Р</p>
+                            <div class="card_goods-name-price">
+                                <div>
+                                    <p class="card_goods-name">Пружинный узел</p>
+                                    <p class="card_goods-name">160мм</p>
+                                </div>
+                                <p class="card_goods-price corners-green">1000 Р</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="goods_container-group">
-                    <div class="goods_title-container">
-                        <h2 class="goods_title">Ключи</h2>
-                        <img class="goods_title-img" src="./images/arrow-down.png" alt="стрелка вниз">
-                    </div>
+                    <h2 class="goods_title">Сверла</h2>
                     <div class="cards_goods">
                         <div class="card_goods">
                             <img class="card_goods-img" src="./images/card1.png" alt="">
-                            <p class="card_goods-name">Пружинный узел 160мм</p>
-                            <p class="card_goods-price">1000 Р</p>
+                            <div class="card_goods-name-price">
+                                <div>
+                                    <p class="card_goods-name">Пружинный узел</p>
+                                    <p class="card_goods-name">160мм</p>
+                                </div>
+                                <p class="card_goods-price corners-green">1000 Р</p>
+                            </div>
                         </div>
                         <div class="card_goods">
                             <img class="card_goods-img" src="./images/card1.png" alt="">
-                            <p class="card_goods-name">Пружинный узел 160мм</p>
-                            <p class="card_goods-price">1000 Р</p>
+                            <div class="card_goods-name-price">
+                                <div>
+                                    <p class="card_goods-name">Пружинный узел</p>
+                                    <p class="card_goods-name">160мм</p>
+                                </div>
+                                <p class="card_goods-price corners-green">1000 Р</p>
+                            </div>
                         </div>
                         <div class="card_goods">
                             <img class="card_goods-img" src="./images/card1.png" alt="">
-                            <p class="card_goods-name">Пружинный узел 160мм</p>
-                            <p class="card_goods-price">1000 Р</p>
+                            <div class="card_goods-name-price">
+                                <div>
+                                    <p class="card_goods-name">Пружинный узел</p>
+                                    <p class="card_goods-name">160мм</p>
+                                </div>
+                                <p class="card_goods-price corners-green">1000 Р</p>
+                            </div>
                         </div>
                         <div class="card_goods">
                             <img class="card_goods-img" src="./images/card1.png" alt="">
-                            <p class="card_goods-name">Пружинный узел 160мм</p>
-                            <p class="card_goods-price">1000 Р</p>
+                            <div class="card_goods-name-price">
+                                <div>
+                                    <p class="card_goods-name">Пружинный узел</p>
+                                    <p class="card_goods-name">160мм</p>
+                                </div>
+                                <p class="card_goods-price corners-green">1000 Р</p>
+                            </div>
                         </div>
                         <div class="card_goods">
                             <img class="card_goods-img" src="./images/card1.png" alt="">
-                            <p class="card_goods-name">Пружинный узел 160мм</p>
-                            <p class="card_goods-price">1000 Р</p>
+                            <div class="card_goods-name-price">
+                                <div>
+                                    <p class="card_goods-name">Пружинный узел</p>
+                                    <p class="card_goods-name">160мм</p>
+                                </div>
+                                <p class="card_goods-price corners-green">1000 Р</p>
+                            </div>
+                        </div>
+                        <div class="card_goods">
+                            <img class="card_goods-img" src="./images/card1.png" alt="">
+                            <div class="card_goods-name-price">
+                                <div>
+                                    <p class="card_goods-name">Пружинный узел</p>
+                                    <p class="card_goods-name">160мм</p>
+                                </div>
+                                <p class="card_goods-price corners-green">1000 Р</p>
+                            </div>
+                        </div>
+                        <div class="card_goods">
+                            <img class="card_goods-img" src="./images/card1.png" alt="">
+                            <div class="card_goods-name-price">
+                                <div>
+                                    <p class="card_goods-name">Пружинный узел</p>
+                                    <p class="card_goods-name">160мм</p>
+                                </div>
+                                <p class="card_goods-price corners-green">1000 Р</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods_container-group">
+                    <h2 class="goods_title">Ключи</h2>
+                    <div class="cards_goods">
+                        <div class="card_goods">
+                            <img class="card_goods-img" src="./images/card1.png" alt="">
+                            <div class="card_goods-name-price">
+                                <div>
+                                    <p class="card_goods-name">Пружинный узел</p>
+                                    <p class="card_goods-name">160мм</p>
+                                </div>
+                                <p class="card_goods-price corners-green">1000 Р</p>
+                            </div>
+                        </div>
+                        <div class="card_goods">
+                            <img class="card_goods-img" src="./images/card1.png" alt="">
+                            <div class="card_goods-name-price">
+                                <div>
+                                    <p class="card_goods-name">Пружинный узел</p>
+                                    <p class="card_goods-name">160мм</p>
+                                </div>
+                                <p class="card_goods-price corners-green">1000 Р</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
         <section class="advantages">
-            <div class="advantages-pic-wrapper">
-                <img class="advantages-img" src="./images/about-us.png" alt="картинка">
-            </div>
             <div class="advantages_container">
                 <div class="goods_text-container">
-                    <p class="goods_title-over">Преимущества</p>
-                    <h2 class="goods_title">Почему нас выбирают?</h2>
-                    <p class="text">Наша продукция обеспечивает надежность и долговечность деревянных
-                        конструкций. Детали разработаны с
-                        учетом всех современных стандартов. Мы используем только высококачественные материалы, чтобы
-                        гарантировать долговечность и надежность.</p>
+                    <p class="goods_title-over goods_title-over-bg-gray">Преимущества</p>
+                    <div class="advantages_title-container">
+                        <h2 class="advantages_title">Почему нас выбирают?</h2>
+                        <p class="text advantages_text">Наша продукция обеспечивает надежность и долговечность
+                            деревянных
+                            конструкций. Детали разработаны с
+                            учетом всех современных стандартов. Мы используем только высококачественные материалы, чтобы
+                            гарантировать долговечность и надежность.</p>
+                    </div>
                 </div>
                 <div class="advantages_cards">
                     <div class="advantages_card">
                         <p class="advantages_green-text">690кг</p>
-                        <p class="text">Жестĸость пружины по
+                        <hr class="horizontal-line">
+                        <p class="text"> жестĸость пружины по
                             результатам лаборатории ГОСТ-Тест</p>
                     </div>
                     <div class="advantages_card">
                         <p class="advantages_green-text">2 тонны</p>
-                        <p class="text">сила стягивания
-                            шурупа DBD</p>
+                        <hr class="horizontal-line">
+                        <p class="text">сила стягивания шурупа DBD</p>
+                    </div>
+                    <div class="advantages_card">
+                        <p class="advantages_green-text">5 поколение</p>
+                        <hr class="horizontal-line">
+                        <p class="text">огромный опыт в строительстке</p>
                     </div>
                     <div class="advantages_card">
                         <p class="advantages_green-text">2 детали</p>
-                        <p class="text">прост в использовании</p>
-                    </div>
-                    <div class="advantages_card">
-                        <p class="advantages_green-text">5-е поколение</p>
-                        <p class="text">огромный опыт в строительстве</p>
+                        <hr class="horizontal-line">
+                        <p class="text">наша продукция проста в использовании</p>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="section-bg">
-            <section class="patent">
-                <h2 class="patent-title patent-title-desktop">Крепежные узлы&nbsp;&nbsp;<img class="patent-dash_img" src="./images/dash.png"
-                        alt="тире">&nbsp;&nbsp;надежные скрепляющие элементы</h2>
-                <h2 class="patent-title patent-title-mob">Крепежные узлы&nbsp;—&nbsp;надежные&nbsp;&nbsp;<img class="patent-dash_img" src="./images/dash.png"
-                        alt="тире">&nbsp;&nbsp;скрепляющие элементы</h2>
-                <div class="patent_container">
-                    <div class="patent_cards">
-                        <div class="patent_card">
-                            <img class="patent_card-img" src="./images/arrow-right.png" alt="arrow">
-                            <p class="patent_card-text">Жестĸость пружины 690 ĸг</p>
-                        </div>
-                        <div class="patent_card">
-                            <img class="patent_card-img" src="./images/arrow-right.png" alt="arrow">
-                            <p class="patent_card-text">Жестĸость пружины 690 ĸг</p>
-                        </div>
-                        <div class="patent_card">
-                            <img class="patent_card-img" src="./images/arrow-right.png" alt="arrow">
-                            <p class="patent_card-text">Жестĸость пружины 690 ĸг</p>
-                        </div>
-                    </div>
-                    <div class="patent_container-img">
-                        <img class="patent-img patent-img1" src="./images/patent.png" alt="патент">
-                        <img class="patent-img patent-img2" src="./images/patent2.png" alt="патент">
-                        <img class="patent-img patent-img3" src="./images/patent3.png" alt="патент">
-                        <img class="patent-img patent-img4" src="./images/patent4.png" alt="патент">
-                        <img class="patent-img patent-img5" src="./images/patent5.png" alt="патент">
-                    </div>
+        <section class="patent">
+            <h2 class="patent-title patent-title-desktop">Крепежные узлы&nbsp;&nbsp;<img class="patent-dash_img"
+                    src="./images/dash.png" alt="тире">&nbsp;&nbsp;надежные скрепляющие элементы</h2>
+            <h2 class="patent-title patent-title-mob">Крепежные узлы&nbsp;—&nbsp;надежные&nbsp;&nbsp;<img
+                    class="patent-dash_img" src="./images/dash.png" alt="тире">&nbsp;&nbsp;скрепляющие элементы</h2>
+            <div class="patent_container">
+                <div class="patent_container-img">
+                    <img class="patent-img patent-img1" src="./images/patent.png" alt="патент">
+                    <img class="patent-img patent-img2" src="./images/patent2.png" alt="патент">
+                    <img class="patent-img patent-img3" src="./images/patent3.png" alt="патент">
+                    <img class="patent-img patent-img4" src="./images/patent4.png" alt="патент">
+                    <img class="patent-img patent-img5" src="./images/patent5.png" alt="патент">
+                </div>
 
-                    <div class="popup-image popup-hidden">
-                        <div class="popup-image-wrapper">
-                            <svg id="close-patent" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                <div class="popup-image popup-hidden">
+                    <div class="popup-image-wrapper">
+                        <svg id="close-patent" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.0608 13.0607C13.6465 12.4749 13.6465 11.5251 13.0608 10.9393L3.51482 1.3934C2.92903 0.807611 1.97928 0.807611 1.3935 1.3934C0.807712 1.97919 0.807712 2.92893 1.3935 3.51472L9.87878 12L1.3935 20.4853C0.807712 21.0711 0.807712 22.0208 1.3935 22.6066C1.97928 23.1924 2.92903 23.1924 3.51482 22.6066L13.0608 13.0607ZM12 13.5H12.0001V10.5H12V13.5Z"
+                                fill="#333333" />
+                            <path
+                                d="M10.9394 13.0607C10.3536 12.4749 10.3536 11.5251 10.9394 10.9393L20.4854 1.3934C21.0712 0.807611 22.0209 0.807611 22.6067 1.3934C23.1925 1.97919 23.1925 2.92893 22.6067 3.51472L14.1214 12L22.6067 20.4853C23.1925 21.0711 23.1925 22.0208 22.6067 22.6066C22.0209 23.1924 21.0712 23.1924 20.4854 22.6066L10.9394 13.0607ZM12.0002 13.5H12.0001V10.5H12.0002V13.5Z"
+                                fill="#333333" />
+                        </svg>
+                        <div class="arrow arrow-prev">
+                            <svg class="arrow-svg" width="50" height="50" viewBox="0 0 60 60" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M13.0608 13.0607C13.6465 12.4749 13.6465 11.5251 13.0608 10.9393L3.51482 1.3934C2.92903 0.807611 1.97928 0.807611 1.3935 1.3934C0.807712 1.97919 0.807712 2.92893 1.3935 3.51472L9.87878 12L1.3935 20.4853C0.807712 21.0711 0.807712 22.0208 1.3935 22.6066C1.97928 23.1924 2.92903 23.1924 3.51482 22.6066L13.0608 13.0607ZM12 13.5H12.0001V10.5H12V13.5Z"
-                                    fill="#333333" />
-                                <path
-                                    d="M10.9394 13.0607C10.3536 12.4749 10.3536 11.5251 10.9394 10.9393L20.4854 1.3934C21.0712 0.807611 22.0209 0.807611 22.6067 1.3934C23.1925 1.97919 23.1925 2.92893 22.6067 3.51472L14.1214 12L22.6067 20.4853C23.1925 21.0711 23.1925 22.0208 22.6067 22.6066C22.0209 23.1924 21.0712 23.1924 20.4854 22.6066L10.9394 13.0607ZM12.0002 13.5H12.0001V10.5H12.0002V13.5Z"
-                                    fill="#333333" />
+                                    d="M40.4487 8.17168C39.4722 7.19538 37.8895 7.19538 36.913 8.17168L20.3019 24.7829C17.3738 27.7111 17.3729 32.4581 20.2999 35.3873L36.7257 51.8258C37.702 52.8023 39.285 52.8023 40.2612 51.8258C41.2375 50.8496 41.2375 49.2666 40.2612 48.2903L23.8311 31.8603C22.8548 30.8838 22.8548 29.3011 23.8311 28.3248L40.4487 11.7072C41.425 10.7309 41.425 9.148 40.4487 8.17168Z"
+                                    fill="currentColor" />
                             </svg>
-                            <div class="arrow arrow-prev">
-                                <svg class="arrow-svg" width="50" height="50" viewBox="0 0 60 60" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M40.4487 8.17168C39.4722 7.19538 37.8895 7.19538 36.913 8.17168L20.3019 24.7829C17.3738 27.7111 17.3729 32.4581 20.2999 35.3873L36.7257 51.8258C37.702 52.8023 39.285 52.8023 40.2612 51.8258C41.2375 50.8496 41.2375 49.2666 40.2612 48.2903L23.8311 31.8603C22.8548 30.8838 22.8548 29.3011 23.8311 28.3248L40.4487 11.7072C41.425 10.7309 41.425 9.148 40.4487 8.17168Z"
-                                        fill="currentColor" />
-                                </svg>
-                            </div>
-                            <img src="./images/houses/house-tilo-1.jpg" alt="картинка дома">
-                            <div class="arrow arrow-next">
-                                <svg class="arrow-svg" width="50" height="50" viewBox="0 0 60 60" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.5513 51.8279C20.5276 52.8042 22.1105 52.8042 23.0869 51.8279L39.698 35.2167C42.6262 32.2884 42.627 27.5415 39.7 24.6121L23.2742 8.17365C22.2979 7.19733 20.715 7.19733 19.7387 8.17365C18.7624 9.14995 18.7624 10.7329 19.7387 11.7092L36.1687 28.1392C37.1452 29.1157 37.1452 30.6985 36.1687 31.6747L19.5513 48.2922C18.575 49.2687 18.575 50.8515 19.5513 51.8279Z"
-                                        fill="currentColor" />
-                                </svg>
-                            </div>
                         </div>
-                    </div>
-            </section>
-        </div>
-        <section class="information">
-            <div class="information-group information-mob">
-                <div class="information_container">
-                    <div class="goods_text-container">
-                        <p class="goods_title-over">Как подобрать размер узла?</p>
-                        <h2 class="info_title">Реĸомендация по установĸе ĸрепежного узла DBD при сборĸе стен деревянного
-                            дома</h2>
-                    </div>
-                    <div class="information_container-text">
-                        <p class="information-text">Технология применения ĸрепежных узлов для сборĸи стен деревянного
-                            дома
-                            вĸлючает: стягивание брусчатых и бревенчатых деталей и использование пружины сжатия для
-                            устранения щелей, вызванных усушĸой древесины. Конструĸция ĸрепежного узла отличается
-                            увеличенной жестĸостью и возможностью самостоятельной фиĸсации на стержне шурупа.</p>
-
-                        <p class="information-text">Шуруп с шестигранной головĸой 17мм и несъемной шайбой,
-                            производится из высоĸопластичных, легированных сталей и
-                            соответствует ĸлассу прочности 6.8.</p>
-                    </div>
-                    <div class="information_cards">
-                        <div class="information_card">
-                            <img class="information_card-img" src="./images/arrow-right.png" alt="arrow">
-                            <p class="information_card-text">Жестĸость пружины 690 ĸг</p>
-                        </div>
-                        <div class="information_card">
-                            <img class="information_card-img" src="./images/arrow-right.png" alt="arrow">
-                            <p class="information_card-text">Жестĸость пружины 690 ĸг</p>
-                        </div>
-                        <div class="information_card">
-                            <img class="information_card-img" src="./images/arrow-right.png" alt="arrow">
-                            <p class="information_card-text">Жестĸость пружины 690 ĸг</p>
+                        <img src="./images/houses/house-tilo-1.jpg" alt="картинка дома">
+                        <div class="arrow arrow-next">
+                            <svg class="arrow-svg" width="50" height="50" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5513 51.8279C20.5276 52.8042 22.1105 52.8042 23.0869 51.8279L39.698 35.2167C42.6262 32.2884 42.627 27.5415 39.7 24.6121L23.2742 8.17365C22.2979 7.19733 20.715 7.19733 19.7387 8.17365C18.7624 9.14995 18.7624 10.7329 19.7387 11.7092L36.1687 28.1392C37.1452 29.1157 37.1452 30.6985 36.1687 31.6747L19.5513 48.2922C18.575 49.2687 18.575 50.8515 19.5513 51.8279Z"
+                                    fill="currentColor" />
+                            </svg>
                         </div>
                     </div>
                 </div>
-                <div>
+        </section>
+        <section class="information">
+            <h2 class="information_title-over">Как подобрать размер узла?</h2>
+            <div class="information_container-group">
+                <div class="information-group-img information-mob">
+                    <img class="information-img" src="./images/diagram.png" alt="картинка">
                     <img class="information-img" src="./images/diagram.png" alt="картинка">
                 </div>
-            </div>
-            <div class="information-group">
-                <div>
-                    <img class="information-img" src="./images/house_img.png" alt="картинка">
-                </div>
-                <div class="information_container">
-                    <h2 class="info_title">Разметĸа мест сверления отверстий для установĸи ĸреплений</h2>
-                    <div class="information_container-text">
-                        <p class="information-text">Производим разметĸу для сверления ĸомбинированного отверстия, под
-                            установĸу ĸрепежных узлов
-                            согласно схеме разметĸи. Для установĸи ĸрепежного узла необходимо сдвинуть место сверления
-                            отверстия влево или вправо от пропила (оси) на 10 — 15 см., что поможет избежать
-                            проворачивание
-                            шурупа при стягивании деталей между собой.</p>
+                <div class="information-group">
+                    <div class="information_container">
+                        <h2 class="info_title">Реĸомендация по установĸе ĸрепежного узла DBD при сборĸе стен
+                            деревянного
+                            дома</h2>
+                        <div class="information_container-text">
+                            <p class="text">Технология применения ĸрепежных узлов для сборĸи стен
+                                деревянного
+                                дома
+                                вĸлючает: стягивание брусчатых и бревенчатых деталей и использование пружины сжатия для
+                                устранения щелей, вызванных усушĸой древесины. Конструĸция ĸрепежного узла отличается
+                                увеличенной жестĸостью и возможностью самостоятельной фиĸсации на стержне шурупа.</p>
 
-                        <p class="information-text">Крепления необходимо расставлять по длине детали в шахматном
-                            порядĸе, устанавливая ĸаждый следующий ĸрепежный узел с
-                            противоположенной стороны от ранее установленного ĸрепления. Усилие стягивания детали по
-                            длине
-                            станет наиболее равномерно.</p>
+                            <p class="text">Шуруп с шестигранной головĸой 17мм и несъемной шайбой,
+                                производится из высоĸопластичных, легированных сталей и
+                                соответствует ĸлассу прочности 6.8.</p>
+                        </div>
+                        <div class="information_cards">
+                            <div class="information_card">
+                                <p class="information_card-text">690 ĸг</p>
+                                <hr class="horizontal-line-info">
+                                <p class="text">жестĸость пружины</p>
+                            </div>
+                            <div class="information_card">
+                                <p class="information_card-text">2 детали</p>
+                                <hr class="horizontal-line-info">
+                                <p class="text">в конструкции</p>
+                            </div>
+                            <div class="information_card">
+                                <p class="information_card-text">2 тонны</p>
+                                <hr class="horizontal-line-info">
+                                <p class="text">сила стягивания</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information_container">
+                        <h2 class="info_title">Разметĸа мест сверления отверстий для установĸи ĸреплений</h2>
+                        <div class="information_container-text">
+                            <p class="text">Производим разметĸу для сверления ĸомбинированного отверстия,
+                                под
+                                установĸу ĸрепежных узлов
+                                согласно схеме разметĸи. Для установĸи ĸрепежного узла необходимо сдвинуть место
+                                сверления
+                                отверстия влево или вправо от пропила (оси) на 10 — 15 см., что поможет избежать
+                                проворачивание
+                                шурупа при стягивании деталей между собой.</p>
 
-                        <p class="information-text"> <span class="information-text-bold">Внимание:&nbsp;</span>Если
-                            зазор
-                            между
-                            деталями не устраняется, то необходимо
-                            разобраться в возниĸшей
-                            ситуации, а именно: — набухание древесины — попадание уплотнителя — попадание шурупа в
-                            ĸлеевой
-                            шов или ĸомпенсационный паз.</p>
+                            <p class="text">Крепления необходимо расставлять по длине детали в шахматном
+                                порядĸе, устанавливая ĸаждый следующий ĸрепежный узел с
+                                противоположенной стороны от ранее установленного ĸрепления. Усилие стягивания детали по
+                                длине
+                                станет наиболее равномерно.</p>
+
+                            <p class="text"> <span class="information-text-bold">Внимание:&nbsp;</span>Если
+                                зазор
+                                между
+                                деталями не устраняется, то необходимо
+                                разобраться в возниĸшей
+                                ситуации, а именно: — набухание древесины — попадание уплотнителя — попадание шурупа в
+                                ĸлеевой
+                                шов или ĸомпенсационный паз.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="section-bg">
-            <section class="delivery">
-                <div class="delivery_info">
-                    <div class="goods_text-container">
-                        <h2 class="goods_title">Способы доставки</h2>
-                        <p class="text">Вы выбираете наиболее удобный способ, а мы доставляем вам лучшие
-                            детали
-                            для
-                            воплощения ваших проектов.</p>
-                    </div>
-                    <div class="delivery_img-container delivery_img-container-desktop">
-                        <img class="delivery_img-ozon" src="./images/Ozon_logo_clear.png" alt="ozon">
-                        <img class="delivery_img-yandex" src="./images/yandex_logo.png" alt="yandex">
+        <section class="delivery">
+            <div class="delivery_info">
+                <div class="goods_text-container delivery_info-text">
+                    <h2 class="goods_title delivery_info-title">Способы доставки</h2>
+                    <p class="text text-delivery">Вы выбираете наиболее удобный способ, а мы доставляем вам лучшие
+                        детали
+                        для
+                        воплощения ваших проектов.</p>
+                </div>
+            </div>
+            <div class="delivery_card-container">
+                <div class="delivery_card delivery_card-width">
+                    <p class="delivery_card-title">По Москве</p>
+                    <hr class="horizontal-line-delivery">
+                    <div>
+                        <p class="delivery_card-text-bold">Самовывоз из офиса</p>
+                        <p class="delivery_card-text-underline">г. Москва, ул. Молодогвардейская 33ĸ1</p><br />
+                        <p class="delivery_card-text-bold">Курьером - 3000 ₽</p>
                     </div>
                 </div>
-                <div class="delivery_card-container">
-                    <div class="delivery_card-main">
-                        <div class="delivery_card">
-                            <p class="delivery_card-title">По Москве</p>
-                            <div>
-                                <p class="delivery_card-text-bold">Самовывоз из офиса</p>
-                                <p class="delivery_card-text-underline">г. Москва, ул. Молодогвардейская 33ĸ1</p><br />
-                                <p class="delivery_card-text-bold">Курьером - 3000 ₽</p>
-                            </div>
-                        </div>
-                        <img class="delivery_card-img" src="./images/map.png" alt="map">
-                    </div>
-                    <div class="delivery_card delivery_card-width">
-                        <p class="delivery_card-title">По Московской области</p>
-                        <p class="delivery_card-text"><span class="delivery_card-text-bold">Индивидуальный расчет</span>
-                            (курьерской службой
-                            Яндекс)</p>
-                    </div>
-                    <div class="delivery_card delivery_card-width">
-                        <p class="delivery_card-title">В другие города</p>
-                        <div class="delivery_card-text-container">
-                            <p class="delivery_card-text delivery_card-text-1">СДЕК</p>
-                            <p class="delivery_card-text delivery_card-text-2">ПЭК</p>
-                            <p class="delivery_card-text delivery_card-text-3">Деловые линии</p>
-                            <p class="delivery_card-text delivery_card-text-4">Байкал Сервис</p>
-                        </div>
+                <div class="delivery_card delivery_card-width">
+                    <p class="delivery_card-title">По Московской области</p>
+                    <hr class="horizontal-line-delivery">
+                    <p class="delivery_card-text"><span class="delivery_card-text-bold">Индивидуальный расчет</span>
+                        (курьерской службой
+                        Яндекс)</p>
+                </div>
+                <div class="delivery_card delivery_card-width">
+                    <p class="delivery_card-title">В другие города</p>
+                    <hr class="horizontal-line-delivery">
+                    <div class="delivery_card-text-container">
+                        <p class="delivery_card-text">СДЕК</p>
+                        <p class="delivery_card-text">ПЭК</p>
+                        <p class="delivery_card-text">Деловые линии</p>
+                        <p class="delivery_card-text">Байкал Сервис</p>
                     </div>
                 </div>
-                <div class="delivery_img-container delivery_img-container-mob">
+                <div class="delivery_card-width delivery_img-container corners-green-width">
+                    <p class="delivery_card-title">Через маркетплейсы</p>
                     <img class="delivery_img-ozon" src="./images/Ozon_logo_clear.png" alt="ozon">
                     <img class="delivery_img-yandex" src="./images/yandex_logo.png" alt="yandex">
                 </div>
-            </section>
-        </div>
-        <div class="form-bg">
-            <section class="order">
-                <div class="order_text-container">
-                    <h2 class="goods_title order_text">Закажите качественные <br />
-                        крепежные узлы</h2>
-                    <p class="text order_text">Оставьте свои контактные данные, и мы свяжемся с вами
-                        для консультации и выбора лучших решений для вашего проекта.</p>
-                </div>
-                <div class="order_form-container">
+            </div>
+        </section>
+        <section class="order">
+            <div class="order_text-container">
+                <h2 class="order_title">Закажите качественные
+                    крепежные узлы</h2>
+            </div>
+            <div class="order_form-container">
+                <p class="text order_text">Оставьте свои контактные данные, и мы свяжемся с вами
+                    для консультации и выбора лучших решений для вашего проекта.</p>
+                <div class="order_form-container-group corners-black">
                     <form action="">
-                        <input class="input-name" type="text" placeholder="Имя">
-                        <input class="input-phone" type="number" placeholder="Номер телефона">
-                        <div class="btn btn-form">
-                            <p class="btn-text btn_order">Отправить</p>
-                            <img class="arrow-img" src="./images/arrow-right.png" alt="стрелка вправо">
-                            <a href="/"></a>
+                        <div class="input-container">
+                            <input class="input-name" type="text" placeholder="Имя">
+                            <input class="input-phone" type="number" placeholder="Номер телефона">
                         </div>
+                        <button class="btn-text btn_order">Отправить</button>
                     </form>
                     <div class="check-container">
                         <input type="checkbox" id="option1" name="options" value="value1">
@@ -457,153 +501,38 @@
                             документами.</label>
                     </div>
                 </div>
-            </section>
-        </div>
-        <div class="section-bg">
-            <section class="reviews">
-                <div class="reviews-swiper">
-                    <div class="button-prev"><img class="btn-swiper" src="./images/arrow-left.png" alt="кнопка назад">
-                    </div>
-                    <div class="swiper-wrapper">
-                        <div class="review-container swiper-slide">
-                            <div class="review-container-slider-group">
-                                <div class="review-container-slider">
-                                    <div id="a" class="review-container-pics">
-                                        <img src="./images/star.png" alt="star">
-                                        <img src="./images/star.png" alt="star">
-                                        <img src="./images/star.png" alt="star">
-                                        <img src="./images/star.png" alt="star">
-                                        <img src="./images/star.png" alt="star">
-                                    </div>
-                                    <p id="b" class="review-text">Крепежный узел внушает доверие!!!закручивал
-                                        гайковертом
-                                        285
-                                        н.м,глухарь
-                                        целый,притянул
-                                        жестко!!!закрутил два раза один и тот же,для пробы,пружина немного
-                                        подсела,но не
-                                        критично,однозначно
-                                        советую!!!буду брать еще</p>
-                                    <div id="c" class="review-wrapper-group">
-                                        <img src="./images/review-circle.png" alt="review-circle">
-                                        <div>
-                                            <p class="review-wrapper-group-text-bold">Дмитрий Г.</p>
-                                            <p class="review-wrapper-group-text">Ozone</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="review-pic-wrapper">
-                                    <img src="./images/diagram.png" alt="review">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-container swiper-slide">
-                            <div class="review-container-slider-group">
-                                <div class="review-container-slider">
-                                    <div id="a" class="review-container-pics">
-                                        <img src="./images/star.png" alt="star">
-                                        <img src="./images/star.png" alt="star">
-                                        <img src="./images/star.png" alt="star">
-                                        <img src="./images/star.png" alt="star">
-                                        <img src="./images/star.png" alt="star">
-                                    </div>
-                                    <p id="b" class="review-text">Крепежный узел внушает доверие!!!закручивал
-                                        гайковертом
-                                        285
-                                        н.м,глухарь
-                                        целый,притянул
-                                        жестко!!!закрутил два раза один и тот же,для пробы,пружина немного
-                                        подсела,но не
-                                        критично,однозначно
-                                        советую!!!буду брать еще</p>
-                                    <div id="c" class="review-wrapper-group">
-                                        <img src="./images/review-circle.png" alt="review-circle">
-                                        <div>
-                                            <p class="review-wrapper-group-text-bold">Дмитрий Г.</p>
-                                            <p class="review-wrapper-group-text">Ozone</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="review-pic-wrapper">
-                                    <img src="./images/diagram.png" alt="review">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-container swiper-slide">
-                            <div class="review-container-slider-group">
-                                <div class="review-container-slider">
-                                    <div id="a" class="review-container-pics">
-                                        <img src="./images/star.png" alt="star">
-                                        <img src="./images/star.png" alt="star">
-                                        <img src="./images/star.png" alt="star">
-                                        <img src="./images/star.png" alt="star">
-                                        <img src="./images/star.png" alt="star">
-                                    </div>
-                                    <p id="b" class="review-text">Крепежный узел внушает доверие!!!закручивал
-                                        гайковертом
-                                        285
-                                        н.м,глухарь
-                                        целый,притянул
-                                        жестко!!!закрутил два раза один и тот же,для пробы,пружина немного
-                                        подсела,но не
-                                        критично,однозначно
-                                        советую!!!буду брать еще</p>
-                                    <div id="c" class="review-wrapper-group">
-                                        <img src="./images/review-circle.png" alt="review-circle">
-                                        <div>
-                                            <p class="review-wrapper-group-text-bold">Дмитрий Г.</p>
-                                            <p class="review-wrapper-group-text">Ozone</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="review-pic-wrapper">
-                                    <img src="./images/diagram.png" alt="review">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="button-next"><img class="btn-swiper" src="./images/arrow-right.png" alt="кнопка вперед">
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <section class="contacts">
             <div class="contacts_container">
-                <div class="goods_text-container">
-                    <p class="goods_title-over">Контакты</p>
+                <div class="goods_text-container contacts_info-text">
+                    <p class="goods_title-over goods_title-over-bg-gray">Контакты</p>
                     <h2 class="contacts_title">Связаться с нами</h2>
                 </div>
                 <div class="contacts_container-group">
                     <div class="contacts_info">
+                        <img class="contact-icon" src="./images/call.png" alt="call">
+                        <div class="contact-us_phones">
+                            <a href="//" class="contacts_text">+7 (939) 843-77-87</a>
+                            <a href="//" class="contacts_text">+7 (495) 197-83-09</a>
+                        </div>
+                    </div>
+                    <div class="contacts_info">
                         <img class="contact-icon" src="./images/mail.png" alt="mail">
                         <div class="contacts_container-text">
-                            <p class="contacts_text-bold">Электронная почта</p>
                             <p class="contacts_text">dombezdyr@yandex.ru</p>
                         </div>
                     </div>
                     <div class="contacts_info">
-                        <img class="contact-icon" src="./images/mail.png" alt="mail">
+                        <img class="contact-icon" src="./images/map-icon.png" alt="map">
                         <div class="contacts_container-text">
-                            <p class="contacts_text-bold">Телефон и мессенджеры</p>
-                            <div class="contact-us_container">
-                                <div class="contact-us_phones">
-                                    <p class="contacts_text">+7 (939) 843-77-87</p>
-                                    <p class="contacts_text">+7 (495) 197-83-09</p>
-                                </div>
-                                <div class="contact-us_social">
-                                    <img src="./images/vk.png" alt="vk" width="40">
-                                    <img src="./images/vk.png" alt="vk" width="40">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contacts_info">
-                        <img class="contact-icon" src="./images/mail.png" alt="mail">
-                        <div class="contacts_container-text">
-                            <p class="contacts_text-bold">Офис</p>
                             <p class="contacts_text">г.Мосĸва, ул.Молодогвардейсĸая 33ĸ1</p>
                         </div>
+                    </div>
+                    <div class="contact-us_social">
+                        <img class="corner-green-social" src="./images/vk.png" alt="vk" width="40">
+                        <img class="corner-green-social" src="./images/telegram.png" alt="telegram" width="40">
+                        <img class="corner-green-social" src="./images/max.png" alt="max" width="113">
                     </div>
                 </div>
             </div>
@@ -630,28 +559,16 @@
     </main>
     <div class="footer-wrapper">
         <footer class="footer">
-            <div class="footer_container">
-                <div class="footer_contacts-container">
-                    <img src="./images/logo-footer.png" alt="logo" width="153">
-                    <div class="contacts_container-group">
-                        <div class="contacts_info">
-                            <img class="contact-icon" src="./images/mail.png" alt="mail">
-                            <div class="contacts_container-text">
-                                <p class="contacts_text text-white">г.Мосĸва, ул.Молодогвардейсĸая 33ĸ1</p>
-                            </div>
-                        </div>
-                        <div class="contacts_info">
-                            <img class="contact-icon" src="./images/mail.png" alt="mail">
-                            <div class="contacts_container-text">
-                                <div class="contact-us_container">
-                                    <div class="contact-us_phones">
-                                        <p class="contacts_text text-white">+7 (939) 843-77-87</p>
-                                        <p class="contacts_text text-white">+7 (495) 197-83-09</p>
-                                    </div>
-                                    <div class="contact-us_social">
-                                        <img src="./images/tg-white.png" alt="tg" width="40">
-                                        <img src="./images/vk-white.png" alt="vk" width="40">
-                                    </div>
+            <div class="footer-container-group">
+                <div class="footer_container">
+                    <div class="footer_contacts-container">
+                        <img src="./images/logo-footer.png" alt="logo" width="153">
+                        <div class="contacts_container-group">
+                            <div class="contacts_info">
+                                <img class="contact-icon" src="./images/call.png" alt="call">
+                                <div class="contact-us_phones">
+                                    <p class="contacts_text text-white">+7 (939) 843-77-87</p>
+                                    <p class="contacts_text text-white">+7 (495) 197-83-09</p>
                                 </div>
                             </div>
                         </div>
@@ -661,11 +578,24 @@
                                 <p class="contacts_text text-white">dombezdyr@yandex.ru</p>
                             </div>
                         </div>
+                        <div class="contacts_info">
+                            <img class="contact-icon" src="./images/map-icon.png" alt="map">
+                            <div class="contacts_container-text">
+                                <p class="contacts_text text-white">г.Мосĸва, ул.Молодогвардейсĸая 33ĸ1</p>
+                            </div>
+                        </div>
+                        <div class="contact-us_social">
+                            <img class="corner-green-social" src="./images/vk-white.png" alt="vk" width="40">
+                            <img class="corner-green-social" src="./images/tg-white.png" alt="telegram" width="40">
+                            <img class="corner-green-social" src="./images/max-white.png" alt="max" width="113">
+                        </div>
                     </div>
                 </div>
-                <div class="delivery_img-container footer_img-container">
-                    <img class="delivery_img-ozon" src="./images/ozon-white.png" alt="ozon">
-                    <img class="delivery_img-yandex" src="./images/ya-footer.png" alt="yandex">
+                <div class="delivery_card-width delivery_img-container corners-green-width">
+                    <p class="delivery_card-title">Всю нашу продукцию
+                        можно приобрести на маркетплейсах</p>
+                    <img class="delivery_img-ozon" src="./images/Ozon_logo_clear.png" alt="ozon">
+                    <img class="delivery_img-yandex" src="./images/yandex_logo.png" alt="yandex">
                 </div>
             </div>
             <div class="footer_info-container">
